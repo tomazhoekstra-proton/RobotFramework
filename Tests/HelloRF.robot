@@ -7,10 +7,14 @@ Library         SeleniumLibrary
 *** Test Cases ***
 Eerste test
   [Documentation]   basis info
-  [Tags]            11  Smoke hallo
+  [Tags]            Smoke hallo
 
 # initialiseer selenium
-  Set selenium speed  .7s
+  Set selenium speed  .3s
   log  Start de eerste test
   
-  open browser    https://nos.nl/     edge
+  open browser    https://automationplayground.com/crm/     edge
+
+  click link      Sign In
+  sleep           1s
+  close browser
